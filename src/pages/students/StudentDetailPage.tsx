@@ -4,9 +4,11 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { ChevronLeftIcon, ShareIcon } from 'lucide-react';
 import InterestChannel from './components/interest-channel';
+import { useRouter } from '@/routes/hooks';
 
 export default function StudentDetailPage() {
-  // const router = useRouter();}
+  const router = useRouter();
+
   return (
     <div className="p-10">
       <div className="flex items-center justify-between">
@@ -120,7 +122,6 @@ export default function StudentDetailPage() {
         <InterestChannel title="Interest" />
         <InterestChannel title="Interest" />
       </div>
-
     </div>
   );
 }
